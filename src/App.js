@@ -4,22 +4,32 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Distric name="Nowakhali" Special="vibag"></Distric>
+      <Distric name="b-ariya" Special="war" ></Distric>
+      <Distric name="cumilla" Special='moynamoti' ></Distric>
     </div>
+    
   );
 }
 
+
+function Distric(props){
+
+const districSyle={
+backgroundColor:'yellow',
+margin:'200px',
+borderRadious:'30px'
+}
+  return(
+    <div style={districSyle}>
+      <h2>Name:{props.name}</h2>
+      <p>Specialty:{props.Special}</p>
+    </div>
+  )
+  
+}
+
 export default App;
+
+
+// similar in look ,,different in data
